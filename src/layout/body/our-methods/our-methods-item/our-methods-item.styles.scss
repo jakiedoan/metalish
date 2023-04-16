@@ -1,0 +1,204 @@
+@import 'src/styles/variables';
+.our-methods-item {
+  width: fit-content;
+  margin: auto;
+
+  .our-methods-item-box {
+    position: relative;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 1000px;
+    min-width: 1000px;
+    height: 550px;
+
+    @media #{$info-tablet-1399} {
+      width: 68vw;
+      min-width: 68vw;
+      height: 50vw;
+    }
+
+    @media #{$info-phone} {
+      width: 68vw;
+      min-width: 68vw;
+      height: 50vw;
+    }
+
+    .method-title {
+      position: absolute;
+      color: #fff;
+      font-weight: 800;
+      font-size: 17px;
+      top: 11%;
+      left: 45%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+
+      @media #{$info-tablet-1399} {
+        top: 8.8vw;
+        left: 50%;
+        font-size: 1.4vw;
+      }
+
+      @media #{$info-phone} {
+        top: 8.8vw;
+        left: 49%;
+        font-size: 1.25vw;
+      }
+    }
+
+    .content {
+      position: relative;
+      color: #fff;
+      left: 55%;
+      top: 10%;
+      width: 450px;
+      transform: translate(-50%, 0);
+      bottom: 19px;
+    }
+
+    .private-room-title {
+      position: absolute;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      top: 30%;
+      left: 25%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+
+      @media #{$info-tablet-1399} {
+        top: 35%;
+        left: 27%;
+        font-size: 1.6vw;
+      }
+
+      @media #{$info-phone} {
+        top: 35%;
+        left: 27%;
+        font-size: 1.6vw;
+      }
+    }
+
+    .talking-room-title {
+      position: absolute;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      top: 30%;
+      left: 65%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+
+      @media #{$info-tablet-1399} {
+        top: 35%;
+        left: 72%;
+        font-size: 1.6vw;
+      }
+
+      @media #{$info-phone} {
+        top: 35%;
+        left: 72%;
+        font-size: 1.6vw;
+      }
+    }
+
+    .private-room-content {
+      position: absolute;
+      color: #fff;
+      font-size: 18px;
+      top: 50%;
+      left: 25%;
+      width: 380px;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      word-break: keep-all;
+
+      @media #{$info-tablet-1399} {
+        font-size: 1.5vw;
+        top: 55%;
+        left: 27%;
+        width: 30vw;
+      }
+
+      @media #{$info-phone} {
+        font-size: 1.8vw;
+        top: 60%;
+        left: 27%;
+        width: 30vw;
+      }
+    }
+
+    .talking-room-content {
+      position: absolute;
+      color: #fff;
+      font-size: 18px;
+      top: 53%;
+      left: 66%;
+      width: 380px;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      // text-align: center;
+      word-break: keep-all;
+
+      @media #{$info-tablet-1399} {
+        font-size: 1.5vw;
+        top: 55%;
+        left: 73%;
+        width: 30vw;
+      }
+
+      @media #{$info-phone} {
+        font-size: 1.8vw;
+        top: 60%;
+        left: 73%;
+        width: 30vw;
+      }
+    }
+
+    .item-content {
+      position: absolute;
+      color: #fff;
+      top: 50%;
+      left: 20%;
+      font-size: 18px;
+      width: 25%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      // text-align: center;
+      word-break: keep-all;
+
+      @media #{$info-tablet-1399} {
+        font-size: 1.2vw;
+      }
+
+      @media #{$info-phone} {
+        font-size: 1.2vw;
+      }
+    }
+
+    img {
+      position: absolute;
+      left: 60%;
+      top: 50%;
+      width: 50%;
+      height: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+
+      @media #{$info-tablet-1399} {
+        left: 65%;
+        width: 38vw;
+        height: 20vw;
+      }
+    }
+  }
+}

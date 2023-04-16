@@ -1,0 +1,109 @@
+@import 'src/styles/variables';
+.feedback {
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+  background-color: rgba(0, 0, 0, 0);
+
+  @media #{$info-phone} {
+    padding-bottom: 25px;
+  }
+
+  .title-main {
+    margin: 65px 0 40px 0;
+    @media #{$info-tablet-1399} {
+      margin: 65px 0 40px 0;
+    }
+    @media #{$info-tablet-horizontal} {
+      margin: 2.7vw 0 1.4vw 0;
+    }
+    @media #{$info-phone} {
+      margin: 25px 0 0 0;
+    }
+  }
+
+  .box-slide {
+    position: relative;
+    padding: 0 70px;
+    @media #{$info-tablet-1399} {
+      padding: 0 50px;
+    }
+    @media #{$info-phone} {
+      padding: 0;
+    }
+
+    .box-feedback {
+      display: flex;
+      width: 100%;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+    }
+
+    .icon-slide {
+      position: absolute;
+      top: 40%;
+      z-index: 2;
+      cursor: pointer;
+      img {
+        width: 60px;
+        z-index: 2;
+        opacity: 0.4;
+        transition: opacity 0.4s;
+        &:hover {
+          opacity: 1;
+        }
+        @media #{$info-tablet-1399} {
+          width: 50px;
+        }
+      }
+      &.icon-next {
+        left: -40px;
+        @media #{$info-tablet-1399} {
+          left: -20px;
+        }
+      }
+      &.icon-pre {
+        right: -40px;
+        @media #{$info-tablet-1399} {
+          right: -20px;
+        }
+      }
+    }
+  }
+}
+
+#root {
+  .feedback {
+    .swiper {
+      position: initial;
+      .swiper-pagination-bullet {
+        background: #00ffd1;
+      }
+
+      .swiper-horizontal > .swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal,
+      .swiper-pagination-custom,
+      .swiper-pagination-fraction {
+        @media #{$info-phone} {
+          bottom: 0;
+        }
+      }
+
+      .swiper-wrapper {
+        height: 550px;
+
+        @media #{$info-phone} {
+          height: 56vw;
+        }
+      }
+    }
+  }
+  .swiper-slide {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    @media #{$info-tablet-1399} {
+      margin-left: 7.5px !important;
+      margin-right: 7.5px !important;
+    }
+  }
+}

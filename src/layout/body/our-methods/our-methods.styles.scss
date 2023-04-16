@@ -1,0 +1,108 @@
+@import 'src/styles/variables';
+.our-methods {
+  overflow: hidden;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  // padding: 100px 0;
+  @media #{$info-phone} {
+    padding-bottom: 25px;
+  }
+
+  .title-main {
+    margin: 65px 0 40px 0;
+    @media #{$info-tablet-1399} {
+      margin: 65px 0 40px 0;
+    }
+    @media #{$info-tablet-horizontal} {
+      margin: 2.7vw 0 1.4vw 0;
+    }
+    @media #{$info-phone} {
+      margin: 25px 0 0 0;
+    }
+  }
+
+  .box-slide {
+    position: relative;
+    padding: 0 70px;
+    // margin-top: 150px;
+
+    @media #{$info-tablet-1399} {
+      padding: 0 50px;
+      // margin-top: 10vw;
+    }
+    @media #{$info-phone} {
+      padding: 0;
+    }
+
+    .box-our-methods {
+      display: flex;
+      width: 100%;
+      overflow-x: auto;
+      flex-wrap: nowrap;
+    }
+
+    .icon-slide {
+      position: absolute;
+      top: 45%;
+      z-index: 2;
+      cursor: pointer;
+      img {
+        width: 60px;
+        z-index: 2;
+        opacity: 0.4;
+        transition: opacity 0.4s;
+        &:hover {
+          opacity: 1;
+        }
+        @media #{$info-tablet-1399} {
+          width: 50px;
+        }
+      }
+      &.icon-next {
+        left: -40px;
+        @media #{$info-tablet-1399} {
+          left: -20px;
+        }
+      }
+      &.icon-pre {
+        right: -40px;
+        @media #{$info-tablet-1399} {
+          right: -20px;
+        }
+      }
+    }
+  }
+}
+
+#root {
+  .our-methods {
+    .swiper {
+      position: initial;
+      .swiper-pagination-bullet {
+        background: #00ffd1;
+      }
+      .swiper-horizontal
+        > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+      .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+        @media #{$info-phone} {
+          bottom: -15px;
+        }
+      }
+      // .swiper-wrapper {
+      //   height: 600px;
+
+      //   @media #{$info-tablet-1399} {
+      //     height: 50vw;
+      //   }
+      // }
+    }
+  }
+  .swiper-slide {
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+    @media #{$info-tablet-1399} {
+      margin-left: 7.5px !important;
+      margin-right: 7.5px !important;
+    }
+  }
+}

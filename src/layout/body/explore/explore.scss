@@ -1,0 +1,124 @@
+@import 'src/styles/variables';
+.explore {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: fit-content;
+  padding: 50px 0;
+
+  @media #{$info-phone} {
+  padding: 0 0;
+  }
+
+  .button-explore-collapse {
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 100px;
+    @media #{$info-tablet-1399} {
+      width: 10%;
+    }
+    @media #{$info-phone} {
+      width: 10%;
+    }
+    img {
+      margin: auto;
+      position: relative;
+      cursor: pointer;
+      width: 100%;
+    }
+    .title-explore {
+      cursor: pointer;
+      position: absolute;
+      width: max-content;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 43px;
+      font-weight: bold;
+      color: #ffee54;
+      letter-spacing: 0;
+      animation-name: titleAnimation;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate-reverse;
+      animation-duration: 0.49s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: initial;
+      @media #{$info-tablet-1399} {
+        font-size: 2.82vw;
+      }
+      @media #{$info-phone} {
+        animation-name: titleAnimationMobile;
+        font-size: 3.2vw;
+      }
+    }
+  }
+
+  .button-explore {
+    position: relative;
+    margin: auto;
+    display: flex;
+    width: 1200px;
+    @media #{$info-tablet-1399} {
+      width: 80%;
+    }
+    @media #{$info-phone} {
+      width: 90%;
+    }
+    img {
+      margin: auto;
+      position: relative;
+      cursor: pointer;
+      width: 100%;
+    }
+    .title-explore {
+      cursor: pointer;
+      position: absolute;
+      width: max-content;
+      top: 48%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 43px;
+      font-weight: bold;
+      color: #ffee54;
+      letter-spacing: 0;
+      animation-name: titleAnimation;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate-reverse;
+      animation-duration: 0.49s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: initial;
+      @media #{$info-tablet-1399} {
+        font-size: 2.82vw;
+      }
+      @media #{$info-phone} {
+        animation-name: titleAnimationMobile;
+        font-size: 3.2vw;
+      }
+    }
+  }
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: translate(-50%, -50%) scale(0.98);
+    text-shadow: 0 0 0 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.015);
+    text-shadow: 0 0 5px #8f8100, 0 0 10px #8f8100, 0 0 15px #8f8100,
+      0 0 30px #8f8100;
+  }
+}
+
+@keyframes titleAnimationMobile {
+  0% {
+    transform: translate(-50%, -50%) scale(0.98);
+    text-shadow: 0 0 0 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.015);
+    text-shadow: 0 0 3px #8f8100, 0 0 6px #8f8100, 0 0 9px #8f8100,
+      0 0 12px #8f8100;
+  }
+}

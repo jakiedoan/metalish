@@ -1,0 +1,67 @@
+@import "src/styles/variables";
+
+.footer{
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  padding: 50px 0 100px 0;
+  position: relative;
+  @media #{$info-tablet-1399} {
+    padding: 3vw 0 10vw 0;
+  }
+
+  .logo{
+    width: 100%;
+    text-align: center;
+    .logo-cuckookoo{
+      margin: 0 auto;
+      width: 50%;
+      img{
+        width: 100%;
+      }
+    }
+
+    .logo-chainos{
+      width: 30%;
+      margin: 50px auto 0 auto;
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .contract{
+    width: fit-content;
+    margin: 50px auto 0 auto;
+    @media #{$info-tablet-1399} {
+      margin: 5vw auto 0 auto;
+    }
+    .title-main-footer{
+      display: block;
+      font-weight: 600;
+      color: #FFFFFF;
+      letter-spacing: 5px;
+      width: 100%;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 32px;
+    }
+
+    .title-box{
+      display: flex;
+      margin-bottom: 27px;
+      align-items: center;
+      .icon{
+        color: #9694E7;
+        margin-right: 10px;
+        width: 18px;
+        font-size: 17px;
+      }
+
+      .title{
+        color: #9B9B9B;
+      }
+    }
+  }
+
+}

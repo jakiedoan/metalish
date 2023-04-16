@@ -1,0 +1,86 @@
+@import 'variables';
+
+body {
+  background-color: $bg-color !important;
+}
+
+span {
+  font-size: 1rem;
+  white-space: break-spaces;
+  letter-spacing: 0.05rem;
+  @media #{$info-phone-330} {
+    font-size: 0.8rem;
+  }
+}
+
+.title-main {
+  display: inline-block;
+  //text-shadow: 3px -0.2px 3px #990000;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  z-index: 5;
+  position: relative;
+  font-weight: bold;
+  color: $color-title-main;
+  margin-top: 350px;
+  @media #{$info-tablet-1399} {
+    font-size: 2rem;
+    margin-top: 25vw;
+  }
+  @media #{$info-phone} {
+    font-size: 1.5rem;
+  }
+  @media #{$info-phone-330} {
+    font-size: 1.2rem;
+  }
+}
+
+.hidden-mobile {
+  @media #{$info-phone} {
+    display: none !important;
+  }
+}
+
+.hidden-pc {
+  @media #{$info-pc} {
+    display: none !important;
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+#root {
+  .swiper {
+    position: initial;
+    .swiper-pagination-bullet {
+      background: #00ffd1;
+    }
+    .swiper-horizontal
+      > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+    .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+      bottom: -30px;
+      @media #{$info-phone} {
+        bottom: 0;
+      }
+    }
+  }
+}
+
+html:not(.no-js) [data-aos='fade-up'] {
+  transform: translate3d(0, 50px, 0);
+}
+
+body.modal-open {
+  .header {
+    width: calc(100% - 17px);
+    @media #{$info-phone} {
+      width: 100% !important;
+    }
+  }
+  .timeline-vertical {
+    right: 37px !important;
+  }
+}

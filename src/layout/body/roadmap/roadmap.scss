@@ -1,0 +1,452 @@
+@import 'src/styles/variables';
+
+.roadmap {
+  width: 100%;
+  background-position: center;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: block;
+  height: 1050px;
+  // height: fit-content;
+
+  @media #{$info-tablet-1399} {
+    height: 65vw;
+  }
+  @media #{$info-tablet-991} {
+    height: 85vw;
+  }
+  @media #{$info-phone} {
+    height: 150vw;
+  }
+
+  .title-main {
+    margin: 65px 0 40px 0;
+    @media #{$info-tablet-1399} {
+      margin: 62px 0 40px 0;
+    }
+    @media #{$info-tablet-horizontal} {
+      margin: 2.7vw 0 1.4vw 0;
+    }
+    @media #{$info-phone} {
+      margin: 25px 0 0 0;
+    }
+  }
+
+  .roadmap-box {
+    // padding: 20px 0;
+    margin-top: 400px;
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0 7%;
+
+    @media #{$info-tablet-1399} {
+      margin-top: 20vw;
+    }
+
+    @media #{$info-phone} {
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin-top: 15%;
+      height: fit-content;
+    }
+
+    .box-month-wrapper {
+      position: relative;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: left;
+      height: 801px;
+      width: 330px;
+      top: -400px;
+
+      @media #{$info-tablet-1399} {
+        top: -300px;
+      }
+
+      @media #{$info-tablet-991} {
+        top: -300px;
+      }
+
+      @media #{$info-phone} {
+        background-position: center;
+        height: 22vw;
+        width: 95vw;
+        top: -50px;
+        left: -5%;
+      }
+    }
+
+    .box-month {
+      display: block;
+      position: relative;
+      height: 100px;
+      width: 100px;
+      top: 40%;
+      left: 30%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+
+      @media #{$info-tablet-1399} {
+        top: 45%;
+        height: 6vw;
+        width: 6vw;
+      }
+      @media #{$info-phone} {
+        margin: auto;
+        height: 10vw;
+        width: 10vw;
+        left: 0;
+        top: 25%;
+      }
+      .bg-month {
+        height: 100px;
+        width: 100px;
+        display: block;
+        border-radius: 1.9vw;
+        transform: scaleX(1.6) rotate(45deg);
+        background-color: rgba(0, 0, 0, 0);
+        color: #00c0d7;
+        position: relative;
+        z-index: 1;
+        @media #{$info-tablet-1399} {
+          height: 6vw;
+          width: 6vw;
+        }
+        @media #{$info-phone} {
+          height: 10vw;
+          width: 10vw;
+        }
+
+        &::before {
+          content: '';
+          border-radius: 23px;
+          background-color: #f3faff;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 0;
+          @media #{$info-tablet-1399} {
+            border-radius: 1.6vw;
+          }
+          @media #{$info-phone} {
+            border-radius: 2.5vw;
+          }
+        }
+
+        &::after {
+          border-radius: 23px;
+          transform: translate(8px, 8px);
+          z-index: -1;
+          content: '';
+          position: absolute;
+          display: block;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          @media #{$info-tablet-1399} {
+            transform: translate(0.4vw, 0.4vw);
+            border-radius: 1.6vw;
+          }
+          @media #{$info-phone} {
+            border-radius: 2.5vw;
+          }
+        }
+
+        &.green {
+          left: 5%;
+          box-shadow: 40px 40px 40px 0px rgba(#2fc6da, 0.7);
+          @media #{$info-tablet-1399} {
+            box-shadow: 1.8vw 1.8vw 4vw 0 rgba(#2fc6da, 0.8);
+          }
+          @media #{$info-phone} {
+            // left: 50%;
+            box-shadow: 3vw 3vw 3vw 0 rgba(#2fc6da, 0.8);
+          }
+          &::after {
+            background-color: #00c5ff;
+          }
+        }
+
+        &.blue {
+          left: 5%;
+          box-shadow: 40px 40px 40px 0px rgba(#7778de, 0.7);
+          @media #{$info-tablet-1399} {
+            box-shadow: 1.8vw 1.8vw 3vw 0 rgba(#7778de, 0.8);
+          }
+          @media #{$info-phone} {
+            box-shadow: 3vw 3vw 3vw 0 rgba(#7778de, 0.8);
+          }
+          &::after {
+            background-color: #5342ff;
+          }
+        }
+
+        &.yellow {
+          left: 5%;
+          box-shadow: 40px 40px 40px 0px rgba(#d19760, 0.7);
+          @media #{$info-tablet-1399} {
+            box-shadow: 1.8vw 1.8vw 3vw 0 rgba(#d19760, 0.8);
+          }
+          @media #{$info-phone} {
+            box-shadow: 3vw 3vw 3vw 0 rgba(#d19760, 0.8);
+          }
+          &::after {
+            background-color: #d27315;
+          }
+        }
+
+        &.purple {
+          left: 5%;
+          box-shadow: 40px 40px 40px 0px rgba(#955ecf, 0.7);
+          @media #{$info-tablet-1399} {
+            box-shadow: 1.8vw 1.8vw 3vw 0 rgba(#955ecf, 0.7);
+          }
+          @media #{$info-phone} {
+            box-shadow: 3vw 3vw 3vw 0 rgba(#955ecf, 0.8);
+          }
+          &::after {
+            background-color: #9b28f2;
+          }
+        }
+      }
+
+      .text {
+        position: absolute;
+        font-size: 2rem;
+        top: 48%;
+        font-weight: bold;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        @media #{$info-tablet-1399} {
+          font-size: 2vw;
+        }
+        @media #{$info-phone} {
+          font-size: 2.6vw;
+        }
+        &.green {
+          color: #00c0d7;
+        }
+        &.blue {
+          color: #2000e6;
+        }
+        &.yellow {
+          color: #ff5c00;
+        }
+        &.purple {
+          color: #430073;
+        }
+      }
+
+      .title-year {
+        position: absolute;
+        width: max-content;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 3rem;
+        z-index: 10;
+        font-weight: bold;
+        display: block;
+        color: #ffffff;
+        @media #{$info-tablet-1399} {
+          font-size: 2rem;
+        }
+        @media #{$info-phone} {
+          font-size: 7vw;
+        }
+        &.title-year-2022 {
+          bottom: -125px;
+          left: 50%;
+          @media #{$info-tablet-1399} {
+            bottom: -95px;
+            left: 50%;
+          }
+          @media #{$info-phone} {
+            left: -35vw;
+            bottom: 0.5vw;
+            transform: none;
+          }
+        }
+        &.title-year-2023 {
+          top: -125px;
+          @media #{$info-tablet-1399} {
+            top: -95px;
+          }
+          @media #{$info-phone} {
+            left: 27vw;
+            top: -0.5vw;
+            transform: none;
+          }
+        }
+        &.title-year-2023-second {
+          bottom: -125px;
+          @media #{$info-tablet-1399} {
+            bottom: -95px;
+          }
+          @media #{$info-phone} {
+            left: -35vw;
+            bottom: 0.5vw;
+            transform: none;
+          }
+        }
+        &.title-year-2024 {
+          top: -125px;
+          @media #{$info-tablet-1399} {
+            top: -95px;
+          }
+          @media #{$info-phone} {
+            left: 27vw;
+            top: -0.5vw;
+            transform: none;
+          }
+        }
+      }
+
+      .content-year {
+        position: absolute;
+        width: fit-content;
+        font-size: 0.85rem;
+        word-break: keep-all;
+        left: -18px;
+        @media #{$info-tablet-1399} {
+          font-size: 1.1vw;
+        }
+        @media #{$info-phone} {
+          font-size: 1.5vw;
+        }
+        &.content-year-2022 {
+          top: -200px;
+          left: -50%;
+          @media #{$info-tablet-1399} {
+            top: -15vw;
+            left: -40px;
+          }
+
+          @media #{$info-tablet-991} {
+            top: -15vw;
+            left: -3vw;
+          }
+
+          @media #{$info-phone} {
+            left: 22vw;
+            top: -3.5vw;
+          }
+        }
+
+        &.content-year-2023 {
+          bottom: -250px;
+          left: -50%;
+
+          @media #{$info-tablet-1399} {
+            left: -60%;
+            bottom: -18vw;
+          }
+
+          @media #{$info-tablet-991} {
+            left: -2.5vw;
+          }
+
+          @media #{$info-phone} {
+            left: -35vw;
+            top: -2.5vw;
+            font-size: 1.328vw;
+          }
+        }
+        &.content-year-2023-second {
+          top: -185px;
+          left: -50%;
+          @media #{$info-tablet-1399} {
+            top: -140px;
+          }
+
+          @media #{$info-tablet-991} {
+            top: -15vw;
+          }
+
+          @media #{$info-phone} {
+            left: 25vw;
+            top: -2vw;
+          }
+        }
+        &.content-year-2024 {
+          bottom: -145px;
+          left: -50%;
+          @media #{$info-tablet-1399} {
+            bottom: -110px;
+          }
+          @media #{$info-phone} {
+            left: -30vw;
+            top: 1vw;
+          }
+        }
+        li {
+          position: relative;
+          list-style: none;
+          color: #ffffff;
+          width: 16.5vw;
+          margin-bottom: 5px;
+
+          @media #{$info-tablet-1399} {
+            width: 16.5vw;
+            margin-bottom: 2px;
+          }
+          @media #{$info-phone} {
+            width: 30vw;
+            margin-bottom: 2px;
+          }
+          &::after {
+            border-radius: 50%;
+            position: absolute;
+            content: '';
+            background-color: white;
+            width: 4px;
+            height: 4px;
+            left: -15px;
+            top: 50%;
+            transform: translate(0, -50%);
+
+            @media #{$info-tablet-1399} {
+              top: 0;
+              transform: translate(0, 0.75vw);
+            }
+
+            @media #{$info-phone} {
+              top: 50%;
+              transform: translate(0, -50%);
+            }
+          }
+        }
+      }
+    }
+
+    .roadmap-arrow {
+      position: relative;
+      height: 50px;
+      top: -50px;
+      margin: 0 1%;
+
+      @media #{$info-tablet-1399} {
+        top: 8vw;
+        height: 2vw;
+      }
+
+      @media #{$info-phone} {
+        height: 30px;
+        width: 30px;
+        top: -50px;
+        left: 48%;
+        margin: 3% 0;
+      }
+    }
+  }
+}

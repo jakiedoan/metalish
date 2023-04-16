@@ -1,0 +1,102 @@
+@import 'src/styles/variables';
+
+.overview {
+  position: relative;
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 650px;
+  color: #ffffff;
+  opacity: 1;
+
+  @media #{$info-phone} {
+    height: 130vw;
+  }
+
+  .overview-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+
+  @media #{$info-tablet-1399} {
+    min-height: 60vw;
+  }
+
+  @media #{$info-phone} {
+    min-height: 120vw;
+  }
+
+  .title-main {
+    margin: 65px 0 40px 0;
+    @media #{$info-tablet-1399} {
+      margin: 62px 0 40px 0;
+    }
+    @media #{$info-tablet-horizontal} {
+      margin: 2.7vw 0 1.4vw 0;
+    }
+    @media #{$info-phone} {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  .content {
+    opacity: 1;
+    position: absolute;
+    width: 500px;
+    right: 58%;
+    font-size: 16px;
+    z-index: 2;
+
+    @media #{$info-tablet-1399} {
+      width: 40%;
+      font-size: 1.2vw;
+    }
+
+    @media #{$info-phone} {
+      position: relative;
+      left: 1vw;
+      top: 5vw;
+      width: 100%;
+      font-size: 2vw;
+    }
+
+    p {
+      word-break: keep-all;
+    }
+  }
+
+  .model {
+    opacity: 1;
+    position: relative;
+    float: right;
+    width: 750px;
+    height: 450px;
+    right: -10px;
+    z-index: 2;
+
+    .overlay {
+      position: relative;
+      background-color: gray;
+      opacity: 0.5;
+    }
+
+    @media #{$info-tablet-1399} {
+      top: 45%;
+      left: 5%;
+      height: 40vw;
+      width: 60%;
+    }
+
+    @media #{$info-phone} {
+      position: relative;
+      top: 6vw;
+      left: -5%;
+      height: 40vw;
+      width: 90%;
+    }
+  }
+}

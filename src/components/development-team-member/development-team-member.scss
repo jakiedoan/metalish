@@ -1,0 +1,55 @@
+@import "src/styles/variables";
+.development-team-member{
+  width: fit-content;
+  margin: auto;
+
+  .development-team-member-box{
+    position: relative;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 250px;
+    min-width: 250px;
+    height: 294px;
+    @media #{$info-phone-576} {
+      width: 38vw;
+      min-width: 38vw;
+      height: 43vw;
+    }
+
+    .image-member{
+      position: absolute;
+      width: 77%;
+      top: 34px;
+      left: 50%;
+      transform: translate(-50%, 0);
+      @media #{$info-phone-576} {
+        top: 4vw;
+      }
+    }
+
+    .name-member{
+      width: max-content;
+      position: absolute;
+      color: $color-title-main;
+      left: 50%;
+      transform: translate(-50%,0);
+      font-size: 1rem;
+      bottom: 19px;
+      @media #{$info-phone-576} {
+        font-size: 2.9vw;
+        bottom: 2.3vw;
+      }
+    }
+  }
+  .position-member{
+    color: $color-title-main;
+    width: 100%;
+    text-align: center;
+    display: block;
+    @media #{$info-phone-576} {
+      font-size: 2.9vw;
+    }
+  }
+}

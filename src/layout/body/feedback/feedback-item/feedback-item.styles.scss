@@ -1,0 +1,164 @@
+@import 'src/styles/variables';
+.feedback-item {
+  width: fit-content;
+  margin: auto;
+
+  .feedback-item-box {
+    position: relative;
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 450px;
+    min-width: 450px;
+    height: 500px;
+    left: -10%;
+
+    @media #{$info-tablet-1399} {
+      width: 400px;
+      min-width: 400px;
+      left: 1%;
+    }
+
+    @media #{$info-phone} {
+      width: 52vw;
+      min-width: 50vw;
+      height: 52vw;
+    }
+
+    .avatar {
+      position: absolute;
+      background-size: contain;
+      display: inline-block;
+      background-repeat: no-repeat;
+      top: 14%;
+      left: 6%;
+      width: 35%;
+      height: 35%;
+      text-align: center;
+
+      @media #{$info-tablet-1399} {
+        top: 17%;
+      }
+
+      @media #{$info-phone} {
+        top: 10%;
+        left: 6%;
+      }
+    }
+
+    .user-avatar {
+      position: absolute;
+      width: 25%;
+      top: 18%;
+      left: 23%;
+      transform: translate(-50%, 0);
+    }
+
+    .user-name {
+      position: absolute;
+      color: #fff;
+      left: 65%;
+      top: 15%;
+      width: max-content;
+      transform: translate(-50%, 0);
+      font-size: 30x;
+      bottom: 19px;
+
+      @media #{$info-tablet-1399} {
+        top: 20%;
+      }
+
+      @media #{$info-phone} {
+        font-size: 2.2vw;
+      }
+    }
+
+    .user-grade {
+      position: absolute;
+      color: #fff;
+      left: 67%;
+      top: 25%;
+      transform: translate(-50%, 0);
+      font-size: 18px;
+      width: max-content;
+      bottom: 19px;
+
+      @media #{$info-tablet-1399} {
+        top: 30%;
+      }
+
+      @media #{$info-phone} {
+        font-size: 2.2vw;
+      }
+    }
+
+    .user-summary-title {
+      position: relative;
+      color: #ffee54;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 0);
+      width: max-content;
+      font-size: 25px;
+      bottom: 19px;
+
+      @media #{$info-tablet-1399} {
+        top: 47%;
+        font-size: 1.6vw;
+      }
+
+      @media #{$info-phone} {
+        font-size: 2.2vw;
+      }
+    }
+
+    .user-rated {
+      position: relative;
+      color: #ffee54;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 0);
+      width: max-content;
+      font-size: 25px;
+      bottom: 19px;
+
+      .unchecked {
+        color: silver;
+      }
+
+      @media #{$info-tablet-1399} {
+        top: 47%;
+        font-size: 2vw;
+      }
+
+      @media #{$info-phone} {
+        font-size: 2.2vw;
+      }
+    }
+
+    .user-comment {
+      position: absolute;
+      color: #fff;
+      left: 50%;
+      top: 65%;
+      width: 400px;
+      transform: translate(-50%, 0);
+      bottom: 19px;
+      word-break: keep-all;
+
+      @media #{$info-tablet-1399} {
+        font-size: 0.85rem;
+        left: 53.5%;
+        padding: 0 2vw;
+        width: 100%;
+      }
+
+      @media #{$info-phone} {
+        font-size: 2.1vw;
+        width: 100%;
+        left: 53%;
+      }
+    }
+  }
+}

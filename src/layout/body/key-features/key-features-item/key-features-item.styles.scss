@@ -1,0 +1,105 @@
+@import 'src/styles/variables';
+
+.key-features-item {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: inline-block;
+  margin: auto;
+
+  @media #{$info-tablet-1399} {
+    width: 10vw;
+    height: 9.3vw;
+    margin: auto;
+  }
+
+  img {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    @media #{$info-tablet-1399} {
+      width: 60%;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    width: 290px;
+    height: 440px;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-size: contain;
+    background-position: left;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff;
+
+    @media #{$info-tablet-1399} {
+      top: 50%;
+      width: 20vw;
+      height: 20vw;
+    }
+
+    .title {
+      position: absolute;
+      top: 35%;
+      left: 50%;
+      width: max-content;
+      font-size: 15px;
+      font-weight: 700;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+
+      @media #{$info-tablet-1399} {
+        font-size: 1.1vw;
+        top: 28%;
+        left: 50%;
+      }
+    }
+
+    .content {
+      position: absolute;
+      top: 52%;
+      left: 50%;
+      width: 210px;
+      font-size: 14px;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+      word-break: keep-all;
+
+      @media #{$info-tablet-1399} {
+        width: 14vw;
+        font-size: 1vw;
+      }
+    }
+  }
+  span {
+    white-space: nowrap;
+    position: absolute;
+    font-size: 16px;
+    bottom: -30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    @media #{$info-tablet-1399} {
+      font-size: 1vw;
+      bottom: 0vw;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+.key-features-item:hover .overlay {
+  opacity: 1;
+  z-index: 1;
+}
