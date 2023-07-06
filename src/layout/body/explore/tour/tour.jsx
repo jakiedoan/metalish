@@ -10,24 +10,19 @@ const Tour = ({ windowDimensions }) => {
 
   const images = [
     {
-      slide:
-        `${url}/img/lp-explore-tour/basketball-court.gif`,
+      slide: process.env.PUBLIC_URL + '/images/explore/tour/1.png',
     },
     {
-      slide:
-        `${url}/img/lp-explore-tour/football-pitch.gif`,
+      slide: process.env.PUBLIC_URL + '/images/explore/tour/2.png',
     },
     {
-      slide:
-        `${url}/img/lp-explore-tour/school-building.gif`,
+      slide: process.env.PUBLIC_URL + '/images/explore/tour/3.png',
     },
     {
-      slide:
-        `${url}/img/lp-explore-tour/self-study-classroom.gif`,
+      slide: process.env.PUBLIC_URL + '/images/explore/tour/4.png',
     },
     {
-      slide:
-        `${url}/img/lp-explore-tour/swimming-pool.gif`,
+      slide: process.env.PUBLIC_URL + '/images/explore/tour/5.png',
     },
   ];
 

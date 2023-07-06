@@ -9,10 +9,10 @@ const CoreSkills = ({ windowDimensions }) => {
   const images = {
     bgKeyFeatures: process.env.PUBLIC_URL + '/images/overview/bg-overview.jpg',
     frame: process.env.PUBLIC_URL + '/images/explore/order-service/frame.png',
-    listening: `${url}/img/lp-core-skills/listening.png`,
-    speaking: `${url}/img/lp-core-skills/speaking-1.png`,
-    vocabulary: `${url}/img/lp-core-skills/vocabulary-1.png`,
-    mouthShape: `${url}/img/lp-core-skills/mouthshape.png`,
+    listening: process.env.PUBLIC_URL + `/images/core-skills/listening.jpg`,
+    speaking: process.env.PUBLIC_URL + `/images/core-skills/speaking.jpg`,
+    vocabulary: process.env.PUBLIC_URL + `/images/core-skills/vocabulary.jpg`,
+    mouthShape: process.env.PUBLIC_URL + `/images/core-skills/listening.jpg`,
     exitButton: process.env.PUBLIC_URL + '/images/core-skills/exit-button.png',
   };
 

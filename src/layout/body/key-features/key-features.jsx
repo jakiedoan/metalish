@@ -119,6 +119,10 @@ const KeyFeatures = ({ windowDimensions }) => {
         {t('key-features.title.lbl')}
       </span>
 
+      <br />
+      <br />
+      <br />
+
       <div className='key-features-box'>
         {windowDimensions.width < 767.5 ? (
           <ul className='circle-container' data-aos='zoom-in-up'>

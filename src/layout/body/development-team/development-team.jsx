@@ -11,8 +11,7 @@ import { url } from '../../../url';
 const DevelopmentTeam = ({ windowDimensions }) => {
   // data development team
   // ${url}/img/lp-core-member/lp-core-member-1.png
-  const urlImage =
-    `${url}/img/lp-core-member/lp-core-member-`;
+  const urlImage = process.env.PUBLIC_URL + '/images/development-team/';
 
   const images = {
     next: process.env.PUBLIC_URL + '/images/development-team/right-button.png',
